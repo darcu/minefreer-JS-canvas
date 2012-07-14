@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Pulm</title>
+<link href='http://fonts.googleapis.com/css?family=Squada+One' rel='stylesheet' type='text/css'>
+<style type="text/css">
+		canvas {
+			border: 2px solid #e1e4e7;
+			
+			-moz-box-shadow: 0px 0px 15px #888;
+			-webkit-box-shadow: 0px 0px 15px #888;
+			box-shadow: 0px 0px 15px #888;
+			margin: 30px;
+			/*background-color: red;*/
+		}
+		/*body {
+			background-color: black;
+		}*/
+		#time {
+			width: 100px;
+			height: 30px;
+		}
+		#time, #mines, input {
+			font-family: 'Squada One', cursive;
+			font-size: 24px;
+			
+			color: #000; background: #fff;
+			margin: 0px;
+			border: none;
+		}
+		input:hover, #time:hover {
+			color: #fff; background: #000;
+		}
+</style>
+
+</head>
+<body onload="ini()">
+	<div><div id="mines">Mines: </div><div id="time" >00:00</div><input type="button" value="reset" onclick="ini()"/></div>
+	
+	<canvas id="canvas" width="320" height="320">
+	Canvas not supported.
+	</canvas>
+	<script type="text/javascript" src="scripts/t2.js"></script>
+	
+	
+</body>
+</html>
